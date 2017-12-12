@@ -44,11 +44,15 @@ module.exports = function (oAppData) {
 								var sFullName = koCurrentFolder() ? koCurrentFolder().fullName() : '';
 								if (sFullName === 'Notes')
 								{
-									$('.folders_panel .middle_bar').hide();
+									$('.folders_panel .middle_bar .panel_center').hide();
+									$('.folders_panel .middle_bar .panel_bottom').hide();
+									$('.MailLayout .buttons.big_single_button').addClass('new_note_button');
 								}
 								else
 								{
-									$('.folders_panel .middle_bar').show();
+									$('.folders_panel .middle_bar .panel_center').show();
+									$('.folders_panel .middle_bar .panel_bottom').show();
+									$('.MailLayout .buttons.big_single_button').removeClass('new_note_button');
 								}
 							}
 						;
