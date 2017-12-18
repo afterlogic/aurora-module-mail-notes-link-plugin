@@ -47,12 +47,14 @@ module.exports = function (oAppData) {
 									$('.folders_panel .middle_bar .panel_center').hide();
 									$('.folders_panel .middle_bar .panel_bottom').hide();
 									$('.MailLayout .buttons.big_single_button').addClass('new_note_button');
+									$('.MailLayout .buttons.big_single_button .button.add_new_folder').hide();
 								}
 								else
 								{
 									$('.folders_panel .middle_bar .panel_center').show();
 									$('.folders_panel .middle_bar .panel_bottom').show();
 									$('.MailLayout .buttons.big_single_button').removeClass('new_note_button');
+									$('.MailLayout .buttons.big_single_button .button.add_new_folder').show();
 								}
 							}
 						;
